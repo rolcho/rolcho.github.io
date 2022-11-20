@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
+
+
+header {
+    margin: 0px;
+    padding: 0.6em 10%;
+    border: 0px;
+    background: #070f3a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5em;
+}
+
+body {
+    background: #ebe1c3;
+}
+
+h1 {
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 1.4 em;
+    color: #fff;
+}
+
+#top-space{
+    margin-top: 6em;
+}
+
+#em-space{
+    margin-top: 1em;
+}
+
+.main-header {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 1.5em;
+    color: #070f3a;
+    padding-top: 1em;
+    margin: 0;
+}
+
+main {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+article, #new-post {
+    margin-top: 1em;
+    padding: 1em;
+    background: white;
+    border-radius: 15px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    text-align: justify;
+}
+
+.post-header {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 1em;
+    margin: 0;
+    color: #070f3a;  
+}
+.article-title {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 1.5em;
+    margin: 0;
+    margin-bottom: 0.5em;
+    color: #070f3a;
+}
+
+.title-input-field {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-top: 5px;
+    margin-right: 8%;
+    background: #f6edd3;
+    border: none;
+    width: 97%;
+    min-height: 2em;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 1.4em;
+}
+
+.post-input-field {
+    padding: 0.5em;
+    margin-top: 5px;
+    text-align: justify;    
+    background: #f6edd3;
+    color: black;
+    border: none;
+    width: 98%;
+    min-height: 4em;
+    max-width: 98%;
+    min-width: 98%;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.my-button {
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    background: #070f3a;
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 0.8em;
+}
+
+.my-button:hover {
+    background: #1e2c79;
+    transition: 0.8s;
+}
