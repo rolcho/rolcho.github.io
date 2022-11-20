@@ -15,7 +15,9 @@ header {
 }
 
 body {
-    background: #ebe1c3;
+    margin: 0;
+    padding: 0;
+    background: #070f3a;
 }
 
 h1 {
@@ -43,8 +45,11 @@ h1 {
 }
 
 main {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin:0;
+    padding-left: 10%;
+    padding-right: 10%;
+    background: #ebe1c3;
+    border: none;
 }
 
 article, #new-post {
@@ -61,7 +66,6 @@ article, #new-post {
     margin: 0;
     padding: 0;
     border: none;
-    display: block;
 }
 
 .post-header {
@@ -92,7 +96,6 @@ article, #new-post {
     font-family: 'Roboto';
     font-weight: 300;
     font-size: 1.4em;
-    position: relative;
 }
 
 .post-input-field {
