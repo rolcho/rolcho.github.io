@@ -48,13 +48,20 @@ main {
 }
 
 article, #new-post {
-    margin-top: 1em;
-    padding: 1em;
+    margin-top: 20px;
+    padding: 15px;
     background: white;
     border-radius: 15px;
     font-family: 'Roboto';
     font-weight: 300;
     text-align: justify;
+}
+
+#new-post-container {
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: block;
 }
 
 .post-header {
@@ -74,23 +81,24 @@ article, #new-post {
 }
 
 .title-input-field {
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    margin-top: 5px;
-    margin-right: 8%;
+    border: none;
+    margin: 10px 0px;
+    padding: 1px 10px;
     background: #f6edd3;
     border: none;
-    width: 97%;
-    min-height: 2em;
+    width: 98%;
+    min-height: 50px;
     border-radius: 5px;
     font-family: 'Roboto';
     font-weight: 300;
     font-size: 1.4em;
+    position: relative;
 }
 
 .post-input-field {
-    padding: 0.5em;
-    margin-top: 5px;
+    margin: 10px 0px;
+    padding: 10px 10px;
+    border: none;
     text-align: justify;    
     background: #f6edd3;
     color: black;
@@ -106,7 +114,8 @@ article, #new-post {
 }
 
 .my-button {
-    padding: 1em;
+    width: 70px;
+    height: 30px;
     border: none;
     border-radius: 5px;
     background: #070f3a;
@@ -114,9 +123,11 @@ article, #new-post {
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 0.8em;
+    transition: 0.5s;
 }
 
 .my-button:hover {
-    background: #1e2c79;
-    transition: 0.8s;
+    background: #475bca;
+    transition: 0.5s;
+    font-size: 0.9em;
 }
