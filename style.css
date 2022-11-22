@@ -7,6 +7,8 @@
     --color-negative: white;
     --color-positive: black;
     --color-hover: #49649b;
+    --color-titles: #070f3a;
+    --color-article: white;
      
     --fs-small: 0.8em;
     --fs-medium: 1em;
@@ -35,6 +37,18 @@
     }
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-main: #08124f;
+        --color-article: #1f1f1f;
+        --color-negative: white;
+        --color-positive: white;
+        --color-hover: #49649b;
+        --color-titles: #7ab7f4;
+        --color-background: #0c0c0c;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -49,10 +63,6 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-}
-
-body {
-    background: var(--color-main);
 }
 
 h1 {
@@ -70,7 +80,7 @@ h1 {
     padding-top: var(--em-spaces);
     font-weight: 300;
     font-size: var(--fs-big);
-    color: var(--color-main);
+    color: var(--color-titles);
 }
 
 main {
@@ -88,7 +98,8 @@ article, #new-post {
     font-weight: 300;
     text-align: justify;
     font-size: var(--fs-small);
-    background: var(--color-negative);
+    background: var(--color-article);
+    color: var(--color-positive);
  
 }
 
@@ -96,13 +107,13 @@ article, #new-post {
     font-family: 'Roboto';
     font-weight: 700;
     font-size: var(--fs-small);
-    color: var(--color-main);  
+    color: var(--color-titles);  
 }
 .article-title {
     margin-bottom: calc(var(--fs-small) / 2);
     font-weight: 700;
     font-size: var(--fs-big);
-    color: var(--color-main);
+    color: var(--color-titles);
 }
 
 .title-input-field {
