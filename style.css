@@ -1,16 +1,36 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
 
+:root {
+    --fs-small: 0.8em;
+    --fs-medium: 1em;
+    --fs-big: 1.2em;
+    --fs-pagename: 20px;
+    --menu-padding: 0px;
+    --menu-height: 30px;
+}
+
+@media (min-width: 600px) {
+    :root {
+        --fs-small: 1em;
+        --fs-medium: 1.3em;
+        --fs-big: 1.5em;
+        --fs-pagename: 30px;
+        --menu-padding: 5px;
+        --menu-height: 40px;
+    }
+}
+
 header {
     margin: 0px;
-    padding: 0.6em 10%;
     border: 0px;
+    padding: 0px;
     background: #070f3a;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 5em;
+    /* height: var(--menu-height);    */
 }
 
 body {
@@ -20,14 +40,16 @@ body {
 }
 
 h1 {
+    height: var(--menu-height);
+    padding: var(--menu-padding) 10%;
     font-family: 'Roboto';
     font-weight: 900;
-    font-size: 1.4 em;
+    font-size: var(--fs-pagename);
     color: #fff;
 }
 
 #top-space{
-    margin-top: 6em;
+    margin-top: calc(var(--menu-height) * 2);
 }
 
 #em-space{
@@ -37,7 +59,7 @@ h1 {
 .main-header {
     font-family: 'Roboto';
     font-weight: 300;
-    font-size: 1.5em;
+    font-size: var(--fs-big);
     color: #070f3a;
     padding-top: 1em;
     margin: 0;
@@ -60,7 +82,7 @@ article, #new-post {
     font-family: 'Roboto';
     font-weight: 300;
     text-align: justify;
-    display: block;
+    font-size: var(--fs-small);
 }
 
 #new-post-container {
@@ -72,14 +94,14 @@ article, #new-post {
 .post-header {
     font-family: 'Roboto';
     font-weight: 700;
-    font-size: 1em;
+    font-size: var(--fs-small);
     margin: 0;
     color: #070f3a;  
 }
 .article-title {
     font-family: 'Roboto';
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: var(--fs-big);
     margin: 0;
     margin-bottom: 0.5em;
     color: #070f3a;
@@ -96,7 +118,7 @@ article, #new-post {
     border-radius: 5px;
     font-family: 'Roboto';
     font-weight: 300;
-    font-size: 1.4em;
+    font-size: var(--fs-medium);
 }
 
 .post-input-field {
@@ -114,7 +136,7 @@ article, #new-post {
     border-radius: 5px;
     font-family: 'Roboto';
     font-weight: 300;
-    font-size: 1em;
+    font-size: var(--fs-small);
 }
 
 .my-button {
