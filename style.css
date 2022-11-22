@@ -2,12 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
 
 :root {
+    --color-main: #070f3a;
+    --color-background: #ebe1c3;
+    --color-negative: white;
+    --color-positive: black;
+    --color-hover: #49649b;
+     
     --fs-small: 0.8em;
     --fs-medium: 1em;
     --fs-big: 1.2em;
     --fs-pagename: 20px;
-    --menu-padding: 0px;
-    --menu-height: 30px;
+    --menu-padding: 5px;
+    --menu-height: 40px;
+    --em-spaces: 12px;
+    --em-rounds: 12px;
+
+    --side-padding: 5%;
 }
 
 @media (min-width: 600px) {
@@ -16,144 +26,122 @@
         --fs-medium: 1.3em;
         --fs-big: 1.5em;
         --fs-pagename: 30px;
-        --menu-padding: 5px;
-        --menu-height: 40px;
+        --menu-padding: 10px;
+        --menu-height: 60px;
+        --em-spaces: 15px;
+        --em-rounds: 15px;
+
+        --side-padding: 8%;
     }
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto';
+}
+
 header {
-    margin: 0px;
-    border: 0px;
-    padding: 0px;
-    background: #070f3a;
+    width: 100%;
+    height: var(--menu-height);   
+    background: var(--color-main);
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    /* height: var(--menu-height);    */
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background: #070f3a;
+    background: var(--color-main);
 }
 
 h1 {
-    height: var(--menu-height);
-    padding: var(--menu-padding) 10%;
-    font-family: 'Roboto';
+    padding: var(--menu-padding) var(--side-padding);
     font-weight: 900;
     font-size: var(--fs-pagename);
-    color: #fff;
+    color: var(--color-negative);
 }
 
 #top-space{
-    margin-top: calc(var(--menu-height) * 2);
-}
-
-#em-space{
-    margin-top: 1em;
+    margin-top: var(--menu-height);
 }
 
 .main-header {
-    font-family: 'Roboto';
+    padding-top: var(--em-spaces);
     font-weight: 300;
     font-size: var(--fs-big);
-    color: #070f3a;
-    padding-top: 1em;
-    margin: 0;
+    color: var(--color-main);
 }
 
 main {
-    margin:0;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 20px;
-    background: #ebe1c3;
-    border: none;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
+    padding-bottom: calc(var(--em-spaces) * 2);
+    background: var(--color-background);
 }
 
 article, #new-post {
-    margin-top: 20px;
-    padding: 15px;
-    background: white;
-    border-radius: 15px;
+    margin-top: var(--em-spaces);
+    padding: var(--em-spaces);
+    border-radius: var(--em-rounds);
     font-family: 'Roboto';
     font-weight: 300;
     text-align: justify;
     font-size: var(--fs-small);
-}
-
-#new-post-container {
-    margin: 0;
-    padding: 0;
-    border: none;
+    background: var(--color-negative);
+ 
 }
 
 .post-header {
     font-family: 'Roboto';
     font-weight: 700;
     font-size: var(--fs-small);
-    margin: 0;
-    color: #070f3a;  
+    color: var(--color-main);  
 }
 .article-title {
-    font-family: 'Roboto';
+    margin-bottom: calc(var(--fs-small) / 2);
     font-weight: 700;
     font-size: var(--fs-big);
-    margin: 0;
-    margin-bottom: 0.5em;
-    color: #070f3a;
+    color: var(--color-main);
 }
 
 .title-input-field {
-    border: none;
-    margin: 10px 0px;
-    padding: 1px 10px;
-    background: #f6edd3;
-    border: none;
-    width: calc(100% - 20px);
-    min-height: 50px;
+    margin: calc(var(--em-spaces) / 2) 0;
+    padding: 0 var(--em-spaces);
+    width: calc(100% - var(--em-spaces) * 2);
+    min-height: calc(var(--em-spaces) * 3);
     border-radius: 5px;
-    font-family: 'Roboto';
     font-weight: 300;
     font-size: var(--fs-medium);
+    background: var(--color-background);
 }
 
 .post-input-field {
-    margin: 10px 0px;
-    padding: 10px 10px;
-    border: none;
-    text-align: justify;    
-    background: #f6edd3;
-    color: black;
-    border: none;
+    margin: calc(var(--em-spaces) / 2) 0px;
+    padding: calc(var(--em-spaces) / 2) var(--em-spaces);
     width: calc(100% - 20px);
-    min-height: 4em;
-    max-width: calc(100% - 20px);
-    min-width: calc(100% - 20px);
+    min-height: calc(var(--em-spaces) * 5);
+    max-height: calc(var(--em-spaces) * 5);
+    max-width: calc(100% - var(--em-spaces) * 2);
+    min-width: calc(100% - var(--em-spaces) * 2);
     border-radius: 5px;
-    font-family: 'Roboto';
     font-weight: 300;
     font-size: var(--fs-small);
+    text-align: justify;    
+    background: var(--color-background);
+    color: var(--color-positive);
 }
 
 .my-button {
-    width: 70px;
-    height: 30px;
-    border: none;
+    width: calc(var(--em-spaces) * 5);
+    height: calc(var(--em-spaces) * 2);
     border-radius: 5px;
-    background: #070f3a;
-    color: white;
-    font-family: 'Roboto';
     font-weight: 700;
-    font-size: 0.8em;
-    transition: 0.5s;
+    font-size: var(--fs-small) * 0.8;
+    background: var(--color-main);
+    color: var(--color-negative);
 }
 
 .my-button:hover {
-    background: #475bca;
-    transition: 0.5s;
-    font-size: 0.9em;
+    background: var(--color-hover);
 }
