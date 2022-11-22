@@ -1,7 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
 
-
 header {
     margin: 0px;
     padding: 0.6em 10%;
@@ -61,6 +60,7 @@ article, #new-post {
     font-family: 'Roboto';
     font-weight: 300;
     text-align: justify;
+    display: block;
 }
 
 #new-post-container {
@@ -91,7 +91,7 @@ article, #new-post {
     padding: 1px 10px;
     background: #f6edd3;
     border: none;
-    width: 98%;
+    width: calc(100% - 20px);
     min-height: 50px;
     border-radius: 5px;
     font-family: 'Roboto';
@@ -107,10 +107,10 @@ article, #new-post {
     background: #f6edd3;
     color: black;
     border: none;
-    width: 98%;
+    width: calc(100% - 20px);
     min-height: 4em;
-    max-width: 98%;
-    min-width: 98%;
+    max-width: calc(100% - 20px);
+    min-width: calc(100% - 20px);
     border-radius: 5px;
     font-family: 'Roboto';
     font-weight: 300;
