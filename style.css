@@ -10,11 +10,12 @@
     --color-hover: #49649b;
     --color-titles: #070f3a;
     --color-article: white;
+    --color-button: #070f3a;
      
-    --fs-small: 0.8em;
-    --fs-medium: 1em;
-    --fs-big: 1.2em;
-    --fs-pagename: 20px;
+    --fs-small: 1em;
+    --fs-medium: 1.2em;
+    --fs-big: 1.4em;
+    --fs-pagename: 24px;
     --menu-padding: 5px;
     --menu-height: 40px;
     --em-spaces: 12px;
@@ -23,12 +24,12 @@
     --side-padding: 5%;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
     :root {
-        --fs-small: 1em;
-        --fs-medium: 1.3em;
-        --fs-big: 1.5em;
-        --fs-pagename: 30px;
+        --fs-small: 1.2em;
+        --fs-medium: 1.5em;
+        --fs-big: 1.8em;
+        --fs-pagename: 36px;
         --menu-padding: 10px;
         --menu-height: 60px;
         --em-spaces: 15px;
@@ -40,14 +41,15 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --theme-color: "#08124f";
-        --color-main: #08124f;
+        --theme-color: "#181d40";
+        --color-main: #181d40;
         --color-article: #1f1f1f;
         --color-negative: white;
         --color-positive: white;
         --color-hover: #49649b;
         --color-titles: #7ab7f4;
         --color-background: #0c0c0c;
+        --color-button: #0c0c0c;
     }
 }
 
@@ -74,7 +76,7 @@ h1 {
     color: var(--color-negative);
 }
 
-#top-space{
+#top-space {
     margin-top: var(--menu-height);
 }
 
@@ -111,6 +113,7 @@ article, #new-post {
     font-size: var(--fs-small);
     color: var(--color-titles);  
 }
+
 .article-title {
     margin-bottom: calc(var(--fs-small) / 2);
     font-weight: 700;
@@ -133,8 +136,8 @@ article, #new-post {
     margin: calc(var(--em-spaces) / 2) 0px;
     padding: calc(var(--em-spaces) / 2) var(--em-spaces);
     width: calc(100% - 20px);
-    min-height: calc(var(--em-spaces) * 5);
-    max-height: calc(var(--em-spaces) * 5);
+    min-height: calc(var(--em-spaces) * 8);
+    max-height: calc(var(--em-spaces) * 8);
     max-width: calc(100% - var(--em-spaces) * 2);
     min-width: calc(100% - var(--em-spaces) * 2);
     border-radius: 5px;
@@ -146,12 +149,12 @@ article, #new-post {
 }
 
 .my-button {
-    width: calc(var(--em-spaces) * 5);
-    height: calc(var(--em-spaces) * 2);
+    width: calc(var(--em-spaces) * 7);
+    height: calc(var(--em-spaces) * 3);
     border-radius: 5px;
     font-weight: 700;
     font-size: var(--fs-small) * 0.8;
-    background: var(--color-main);
+    background: var(--color-button);
     color: var(--color-negative);
 }
 
